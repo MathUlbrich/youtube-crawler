@@ -1,0 +1,21 @@
+
+.youtube-card {
+    padding-left: 50px;
+    padding-top: 50px;
+    float: left;
+}
+
+.thumbnail-image {
+    max-height: 160px;
+}
+
+.content-main {
+    padding-bottom: 50px;
+}
+
+.loading {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

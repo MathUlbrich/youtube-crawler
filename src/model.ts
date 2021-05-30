@@ -1,17 +1,16 @@
 import * as z from 'zod';
 
 export const Video = z.object({
-    video: z.string().url().nullable().optional(),
-    thumbnail: z.string().url().nullable().optional(),
+    video: z.string().url().nullable(),
+    thumbnail: z.string().url(),
 });
-
-export type Video = z.infer<typeof Video>;
 
 export const CrawlerResponse = z.object({
     time: z.number().positive(),
     results: z.array(Video),
 });
 
+export type Video = z.infer<typeof Video>;
 export type CrawlerResponse = z.infer<typeof CrawlerResponse>;
 
 export const parseBy = (e: Element[]): Video[] => {
