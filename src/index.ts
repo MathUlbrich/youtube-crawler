@@ -1,7 +1,7 @@
 import express from 'express';
 import { GetFeedVideos } from './crawler';
 
-const PORT = 8801;
+const PORT = process.env.PORT || 3000;
 const server = express();
 
 server.get('/feed', async (req, res) => {
