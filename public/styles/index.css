@@ -13,6 +13,18 @@
     padding-bottom: 50px;
 }
 
+.navbar-main {
+    padding-left: 20px;
+}
+
+.upvote-button {
+    float: left;
+}
+
+.link-button {
+    float: right;
+}
+
 .loading {
     margin: 0;
     position: absolute;
